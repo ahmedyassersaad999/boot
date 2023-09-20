@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,400;0,500;0,600;1,100;1,200;1,400;1,500&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Poppins:ital,wght@0,200;0,400;1,200;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --white-color:#eff7fa;
+    --red-color:#ff3150;
+    --yellow-color:#ecb731;
+}
+body{
+  
+    font-family: 'Poppins', sans-serif;
+}
+/*navbar*/
+.navbar{
+    padding: 10px;
+    background-color: var(--dark-color);
+    box-shadow: 0px 10px 10px gray;
+   position: sticky;
+    border-bottom: 14px solid var(--yellow-color);
+}
+.navbar .navbar-brand{
+    color: white;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+.navbar .navbar-brand span{
+    color:var(--yellow-color) ;
+}
+.navbar .navbar-nav .nav-link{
+    color: var(--yellow-color);
+    padding-right: 20px;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+}
+.navbar .in{
+    border-left: 3px solid var(--yellow-color);
+    padding-left: 10px;
+    color: var(--yellow-color);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.navbar .in input{
+    border: none;
+    border-bottom: 1px solid var(--yellow-color);
+    outline: none;
+    background-color: #19283f;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    width: 200px;
+}
+.navbar .in input:focus{
+    border-bottom: solid 2px var(--yellow-color);
+
+}
+.navbar .in i {
+    padding-left: 15px;
+}
+/*.navbar::after{
+    content: "";
+    width: 105%;
+    height: 13px;
+    position: absolute;
+    background-color: var(--yellow-color);
+    top: 62px;
+    left: 0;
+}*/
+
+
+
+/*landing*/
+.landing{
+    background-color: var(--white-color);
+    
+    
+}
+.landing img{
+    width: 500px;
+}
+.landing .info .para{
+    padding: 50px;
+}
+.para a{
+    margin-left: 299px;
+    margin-top: 10px;
+}
+/*l end*/
+
+/*ser start*/
+.services{
+    background-color: var(--dark-color);
+}
+ .main-title::after{
+    content: "";
+    position: absolute;
+    width:190px;
+    color: var(--yellow-color);
+    bottom: -9px;
+    left: 459px;
+    background-color: var(--yellow-color);
+    height: 3px;
+ }
+ .dot{
+    font-size: 30px;
+    color: rgb(12, 12, 12);
+    padding-left: 55px;
+ }
+ /*services end */
+
+
+ /*about stars*/
+ .a-box{
+    overflow: hidden;
+    position: relative;
+    padding: 5px;
+ }
+ .a-box::before{
+    content: attr(data-card);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ecb73193;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #042a38;
+    transition: 0.3s ease;
+    transform: translateX(-105%);
+ }
+ .a-box:hover::before{
+    transform: translateX(0);
+ }
+/*about ends-*/
+
+/*pro s*/
+.pro-img{
+    overflow: hidden;
+    padding: 3px;
+    position: relative;
+}
+.pro-img::before{
+    content: attr(data-communications);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #042a38;
+    background-color: #ecb73193;
+    transform: translateX(-110%);
+    transition: 0.3s ease;
+}
+.pro-img:hover::before{
+    transform: translateX(0);
+}
+/*pro e*/
+.card{
+    height: 400px;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+.card h2::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 200px;
+    background-color: #ecb731;
+    width: 130px;
+    height: 3px;
+
+}
+.card .card-body input{
+    border: none;
+    outline: none;
+    background-color: #eff7fa;
+    border-bottom: 2px solid var(--yellow-color);
+    color: #19283f;
+    font-weight: bold;
+    padding-left: 15px;
+}
+/*others e*/
+/*contact s*/
+.contact .co-icons{
+    height: 200px;
+
+}
+.contact .co-icons i{
+    left: 150px;
+}
+.contact .co-icons .number{
+    font-size: 12rem;
+    color: var(--white-color);
+    font-weight: 900;
+    z-index: 0;
+}
+.contact .co-icons .icon{
+    color: #ecb731;
+    z-index: 1;
+}
+
+ .so-icon a{
+    display: flex;
+    padding: 19px;
+    text-decoration: none;
+    color: #ffb700;
+  align-items:baseline;
+    
+}
+.so-icon a i{
+    padding-left: 15px;
+   color: var(--white-color);
+   
+}
+.so-icon .fa-facebook{
+    background-color: #1877f2;
+}
+.so-icon .fa-instagram{
+    
+        background-color: #f77737;
+}
+.so-icon .fa-linkedin{
+    background-color: #0077b5;
+}
+.so-icon .fa-twitter{
+    background-color: #1da1f2;
+}
+.so-icon .fa-github{
+    background-color: #c9510c;
+}
+
+/*footer*/
+.footer{
+    border-top: 3px solid white;
+    justify-content: space-between;
+}
+.my-foot a{
+    text-decoration: none;
+    padding-left: 15px; 
+    color: var(--dark-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.my-foot{
+    display: flex;
+   
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+}
